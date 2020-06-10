@@ -17,7 +17,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import java.util.stream.Stream;
 
-import static com.example.pointcutpractice.advice.ServiceAdviceTest.Config;
+import static com.example.pointcutpractice.advice.BorderPatrolTest.Config;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.times;
@@ -25,7 +25,7 @@ import static org.mockito.Mockito.verify;
 
 @SpringBootTest(classes = {BorderPatrol.class, PlaneTravelService.class, ShipTravelService.class,
         TrainTravelService.class, Config.class})
-class ServiceAdviceTest {
+class BorderPatrolTest {
 
     private static final American AMERICAN = new American();
     private static final Caucasian CAUCASIAN = new Caucasian();
